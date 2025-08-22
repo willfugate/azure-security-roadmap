@@ -1,0 +1,5 @@
+- rule: Terminal shell in container
+  desc: Detect terminal shell in container
+  condition: container and proc.name in (bash, zsh, sh)
+  output: Terminal shell in container (user=%user.name container=%container.id)
+  priority: WARNING

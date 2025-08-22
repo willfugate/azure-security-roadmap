@@ -1,0 +1,3 @@
+// Example KQL: Sign-in anomalies
+SigninLogs
+| summarize count() by ResultType
